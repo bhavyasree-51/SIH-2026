@@ -1,0 +1,2 @@
+export const demoFarmData = { crop: 'Tomato', growthStage: 'Flowering', soilMoisture: 34, rainProbability: 20, temperature: 29 }
+export const demoWeather = { temperature: 29, condition: 'Partly cloudy', humidity: 68, rainProbability: 20, wind: 12, forecast: [{ day: 'Today', high: 29, low: 22, rain: 20 }, { day: 'Tue', high: 30, low: 23, rain: 15 }, { day: 'Wed', high: 28, low: 22, rain: 55 }, { day: 'Thu', high: 27, low: 21, rain: 70 }, { day: 'Fri', high: 29, low: 22, rain: 25 }, { day: 'Sat', high: 31, low: 23, rain: 10 }, { day: 'Sun', high: 30, low: 23, rain: 18 }] }

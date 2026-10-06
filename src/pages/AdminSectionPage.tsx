@@ -1,0 +1,2 @@
+import { useLocation } from 'react-router-dom'
+export function AdminSectionPage() { const name = useLocation().pathname.split('/').pop()?.replaceAll('-', ' ') || 'section'; return <div className="admin-section-page"><span className="section-kicker">ADMIN MODULE</span><h1>{name.charAt(0).toUpperCase() + name.slice(1)}</h1><p>This admin workspace module is ready for connected data and moderation workflows.</p><div className="admin-demo-box">DEMO ADMIN VIEW<br /><small>Records and controls will appear here when the production database is connected.</small></div></div> }

@@ -1,0 +1,3 @@
+import { demoFarmData } from '../data/farmData'
+export type IrrigationRecommendation = { shouldWater: boolean; reason: string }
+export function getIrrigationRecommendation(data = demoFarmData): IrrigationRecommendation { const shouldWater = data.soilMoisture < 40 && data.rainProbability < 50; return shouldWater ? { shouldWater, reason: `${data.crop} is in the ${data.growthStage.toLowerCase()} stage. Soil moisture is ${data.soilMoisture}%, and rain chance is only ${data.rainProbability}%. A short irrigation cycle will help today.` } : { shouldWater, reason: `Soil moisture is ${data.soilMoisture}% or rain is likely at ${data.rainProbability}%. Wait and check the soil again tomorrow.` } }

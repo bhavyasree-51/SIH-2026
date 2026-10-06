@@ -1,0 +1,2 @@
+import { useLocation } from 'react-router-dom'
+export function PlaceholderPage() { const location = useLocation(); const name = location.pathname.slice(1).replace('-', ' '); return <div className="placeholder"><span className="section-kicker">KISANAI WORKSPACE</span><h1>{name || 'Feature'} is ready for your farm.</h1><p>This module is part of the KisanAI prototype and will connect to live farm services next.</p></div> }

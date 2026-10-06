@@ -1,0 +1,1 @@
+export function HealthRing({ score }: { score: number }) { return <div className="health-ring" style={{ '--score': `${score * 3.6}deg` } as React.CSSProperties}><div><strong>{score}</strong><small>/ 100</small></div></div> }
